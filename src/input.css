@@ -24,6 +24,9 @@
 body {
   @apply text-deep-forest;
 }
+main{
+    @apply min-h-screen;
+}
 .ct-container{
     @apply px-4 md:px-10 lg:px-12 xl:px-16;
 }
