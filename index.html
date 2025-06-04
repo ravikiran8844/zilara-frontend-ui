@@ -28,7 +28,7 @@
   <header x-data="{ open: false }" class="sticky top-0 z-10 !bg-[#F4F5F4]">
     <div>
       <div class="py-2 border-t border-b border-[#D9E2DA]">
-        <div class="grid gap-5 grid-cols-[auto_1fr] xl:grid-cols-[250px_auto_250px] ct-container">
+        <div class="grid gap-5 grid-cols-2 xl:grid-cols-[250px_auto_250px] ct-container">
           <div class="flex gap-3 items-center flex-shrink">
             <div class="lg:hidden">
               <button @click="open = true" class="cursor-pointer">
@@ -46,8 +46,7 @@
 
             <div>
               <a href="/">
-                <img class="max-md:max-w-[120px] md:max-w-[140px] h-auto"
-                  src="uploads/2025/05/logo.svg" alt />
+                <img class="max-md:max-w-[120px] md:max-w-[140px] h-auto w-full" src="uploads/2025/05/logo.svg" alt />
               </a>
             </div>
           </div>
@@ -96,59 +95,61 @@
               </a>
             </div>
             <div class="lg:ms-2">
-              <a href="#"  class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
+              <a href="#" class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
                 <span class="relative">
                   <svg class="!fill-none hover:!fill-none h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                  fill="none">
-                  <g clip-path="url(#clip0_1844_1600)">
-                    <path
-                      d="M23.1507 16.6754L15.2706 24.679L7.39777 16.6754C0.440189 9.61462 8.32624 1.6206 15.2778 8.68134C22.3314 1.51744 30.2114 9.51145 23.1579 16.685L23.1507 16.6754Z"
-                      stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round"></path>
-                  </g>
-                  <defs>
-                    <clippath id="clip0_1844_1600">
-                      <rect width="28.79" height="28.79" fill="white" transform="translate(0.886719 0.449707)"></rect>
-                    </clippath>
-                  </defs>
-                </svg>
-                <span class="absolute -top-3 -right-3 px-1 !text-xs text-white bg-terra-cota min-w-5 min-h-5 flex justify-center items-center rounded-full">
-                  1
-                </span>
+                    fill="none">
+                    <g clip-path="url(#clip0_1844_1600)">
+                      <path
+                        d="M23.1507 16.6754L15.2706 24.679L7.39777 16.6754C0.440189 9.61462 8.32624 1.6206 15.2778 8.68134C22.3314 1.51744 30.2114 9.51145 23.1579 16.685L23.1507 16.6754Z"
+                        stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_1844_1600">
+                        <rect width="28.79" height="28.79" fill="white" transform="translate(0.886719 0.449707)"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                  <span
+                    class="absolute -top-3 -right-3 px-1 !text-xs text-white bg-terra-cota min-w-5 min-h-5 flex justify-center items-center rounded-full">
+                    1
+                  </span>
                 </span>
 
                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                   WHISLIST
                 </span>
 
-                
+
               </a>
             </div>
 
             <div class="ms-2">
-              <a href="#"  class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
+              <a href="#" class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
                 <span class="relative">
                   <svg xmlns="http://www.w3.org/2000/svg" class="!fill-none hover:!fill-none h-5" viewBox="0 0 24 25"
-                  fill="none">
-                  <path
-                    d="M23.043 7.53735V20.8967C23.0429 22.6783 21.598 24.1223 19.8164 24.1223H4.92773C3.14613 24.1223 1.70127 22.6783 1.70117 20.8967V7.53735H23.043Z"
-                    stroke="#3B4443" stroke-width="1.48892"></path>
-                  <path
-                    d="M7.61523 11.8471V7.24248C7.61523 5.28282 8.08679 3.21729 9.67476 2.06899C11.1535 0.999691 13.0538 0.520773 14.9258 2.10878C16.2977 3.27258 16.6521 5.18743 16.6521 6.98647V11.8471"
-                    stroke="#3B4443" stroke-width="1.48892"></path>
-                </svg>
-                <span class="absolute -top-3 px-1 -right-3 !text-xs text-white bg-terra-cota min-w-5 min-h-5 flex justify-center items-center rounded-full">
-                  12
-                </span>
+                    fill="none">
+                    <path
+                      d="M23.043 7.53735V20.8967C23.0429 22.6783 21.598 24.1223 19.8164 24.1223H4.92773C3.14613 24.1223 1.70127 22.6783 1.70117 20.8967V7.53735H23.043Z"
+                      stroke="#3B4443" stroke-width="1.48892"></path>
+                    <path
+                      d="M7.61523 11.8471V7.24248C7.61523 5.28282 8.08679 3.21729 9.67476 2.06899C11.1535 0.999691 13.0538 0.520773 14.9258 2.10878C16.2977 3.27258 16.6521 5.18743 16.6521 6.98647V11.8471"
+                      stroke="#3B4443" stroke-width="1.48892"></path>
+                  </svg>
+                  <span
+                    class="absolute -top-3 px-1 -right-3 !text-xs text-white bg-terra-cota min-w-5 min-h-5 flex justify-center items-center rounded-full">
+                    12
+                  </span>
                 </span>
 
                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                   CART
                 </span>
 
-                
+
               </a>
             </div>
-       
+
 
             <div class="ms-2">
               <a href="#" class="relative !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
@@ -198,8 +199,7 @@
               <div class="grid grid-cols-4 gap-6">
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/1-20-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/1-20-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Idol 1
                     </div>
@@ -207,8 +207,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/1-20-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/1-20-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Idol 2
                     </div>
@@ -216,8 +215,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/1-20-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/1-20-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Idol 3
                     </div>
@@ -277,8 +275,7 @@
               <div class="grid grid-cols-4 gap-6">
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Earring 1
                     </div>
@@ -286,8 +283,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Earring 2
                     </div>
@@ -295,8 +291,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-1.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-1.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Earring 3
                     </div>
@@ -356,8 +351,7 @@
               <div class="grid grid-cols-4 gap-6">
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-4.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-4.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Necklace 1
                     </div>
@@ -365,8 +359,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-4.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-4.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Necklace 2
                     </div>
@@ -374,8 +367,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-4.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-4.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Necklace 3
                     </div>
@@ -435,8 +427,7 @@
               <div class="grid grid-cols-4 gap-6">
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-2.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-2.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Stud 1
                     </div>
@@ -444,8 +435,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-2.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-2.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Stud 2
                     </div>
@@ -453,8 +443,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-2.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-2.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Stud 3
                     </div>
@@ -514,8 +503,7 @@
               <div class="grid grid-cols-4 gap-6">
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-3.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-3.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Pendant 1
                     </div>
@@ -523,8 +511,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-3.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-3.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Pendant 2
                     </div>
@@ -532,8 +519,7 @@
                 </div>
                 <div>
                   <a href="shop.html">
-                    <img loading="lazy"
-                      src="uploads/2025/05/new-arrivals-3.webp" alt />
+                    <img loading="lazy" src="uploads/2025/05/new-arrivals-3.webp" alt />
                     <div class="text-center text-deep-forest mt-2 font-medium">
                       Pendant 3
                     </div>
