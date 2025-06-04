@@ -610,7 +610,8 @@
 
         <!-- PRODUCT TYPE -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: true}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>PRODUCT TYPE</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -630,7 +631,8 @@
 
         <!-- PRICE -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: false}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>PRICE</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -650,7 +652,8 @@
 
         <!-- METAL -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: false}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>METAL</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -670,7 +673,8 @@
 
         <!-- RING STYLE -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: false}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>RING STYLE</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -690,7 +694,8 @@
 
         <!-- FINISH -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: false}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>FINISH</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -710,7 +715,8 @@
 
         <!-- MOTIFS AND PATTERNS -->
         <div class="mb-4 border-b border-[#C8C8C8]  pb-2" x-data="{ open: false}" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>MOTIFS AND PATTERNS</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -730,7 +736,8 @@
 
         <!-- GIFTS -->
         <div class="mb-4" x-data="{ open: false }" x-cloak>
-          <button class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
+          <button
+            class="w-full flex justify-between items-center text-left font-medium text-deep-forest cursor-pointer text-md"
             @click="open = !open">
             <span>GIFTS</span>
             <svg class="h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none"
@@ -818,7 +825,7 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-1.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-1.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -908,98 +915,7 @@
           </div>
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-2.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-3.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-2.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1090,97 +1006,7 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-4.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-2.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-3.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1271,7 +1097,97 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-3.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-4.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-2.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1362,187 +1278,7 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-4.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-1.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-2.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-3.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1633,7 +1369,187 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-3.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-4.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-1.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-2.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1724,97 +1640,7 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-4.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-2.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-3.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1905,7 +1731,97 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-3.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-4.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-2.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -1996,97 +1912,7 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-4.webp" alt />
-
-              <div x-data="{ loading: false }"
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
-                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
-                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
-                  <template x-if="!loading">
-                    <span>ADD TO CART</span>
-                  </template>
-
-                  <template x-if="loading">
-                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <path
-                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path
-                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
-                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
-                        class="text-gray-900">
-                      </path>
-                    </svg>
-                  </template>
-                </button>
-              </div>
-
-              <button class="absolute top-0 right-0 p-2 cursor-pointer">
-                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
-                  <path
-                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
-                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="p-2 sm:p-4 space-y-1 bg-white">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                    fill="#FFAA00"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                    fill="#FFBD38"></path>
-                </svg>
-              </div>
-
-              <div class="flex gap-1 items-center flex-wrap">
-                <div class="text-sm sm:text-md font-semibold text-sage">
-                  ₹ 45,445.00
-                </div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                  ₹ 48,397.00
-                </div>
-              </div>
-
-              <div class="flex justify-between gap-2">
-                <div class="text-sm text-deep-forest truncate">
-                  Silver Miracle Earrings
-                </div>
-                <div class="font-semibold text-sm text-sage">16g</div>
-              </div>
-            </div>
-          </div>
-          <div class="group shadow-sm rounded-sm overflow-hidden">
-            <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-2.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-3.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -2177,7 +2003,188 @@
 
           <div class="group shadow-sm rounded-sm overflow-hidden">
             <div class="relative">
-              <img src="uploads/2025/05/new-arrivals-3.webp" alt />
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-4.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-2.webp" alt /></a>
+
+              <div x-data="{ loading: false }"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
+                <button @click="loading = true; setTimeout(() => loading = false, 2000)" :disabled="loading"
+                  class="uppercase !text-xs sm:!text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-3 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                  <template x-if="!loading">
+                    <span>ADD TO CART</span>
+                  </template>
+
+                  <template x-if="loading">
+                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                      <path
+                        d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-gray-900">
+                      </path>
+                    </svg>
+                  </template>
+                </button>
+              </div>
+
+              <button class="absolute top-0 right-0 p-2 cursor-pointer">
+                <svg class="h-4 lg:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" fill="none">
+                  <path
+                    d="M22.0798 6.45728C22.0798 3.61746 19.6812 1.31476 16.7225 1.31476C14.5112 1.31476 12.6119 2.60153 11.7948 4.43798C10.9777 2.60153 9.07841 1.31476 6.86599 1.31476C3.90961 1.31476 1.50977 3.61746 1.50977 6.45728C1.50977 14.7082 11.7948 20.1707 11.7948 20.1707C11.7948 20.1707 22.0798 14.7082 22.0798 6.45728Z"
+                    fill="white" fill-opacity="0.5" stroke="#3B4443" stroke-width="1.71417" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-2 sm:p-4 space-y-1 bg-white">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                    fill="#FFAA00"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                    fill="#FFBD38"></path>
+                </svg>
+              </div>
+
+              <div class="flex gap-1 items-center flex-wrap">
+                <div class="text-sm sm:text-md font-semibold text-sage">
+                  ₹ 45,445.00
+                </div>
+                <div class="text-sm line-through text-[#6D6D6D]">
+                  ₹ 48,397.00
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-2">
+                <div class="text-sm text-deep-forest truncate">
+                  Silver Miracle Earrings
+                </div>
+                <div class="font-semibold text-sm text-sage">16g</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group shadow-sm rounded-sm overflow-hidden">
+            <div class="relative">
+              <a href="product.html"><img src="uploads/2025/05/new-arrivals-3.webp" alt /></a>
 
               <div x-data="{ loading: false }"
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
@@ -2271,25 +2278,105 @@
       </div>
     </section>
 
-    <section class="fixed bottom-4 w-full px-4 lg:hidden">
-        <div class="bg-sage text-white text-sm rounded-full max-w-sm mx-auto h-12 divide-x divide-white grid grid-cols-2">
-          <button class="cursor-pointer">SORT BY</button>
-          <button class="flex justify-center items-center gap-1 cursor-pointer">
-              <span>
-                FILTER
-              </span>
-            <span class="relative">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3" viewBox="0 0 17 14" fill="none">
-                <path d="M0 1.09917C0 0.588326 0.380562 0.174194 0.85 0.174194H16.15C16.6195 0.174194 17 0.588326 17 1.09917C17 1.61002 16.6195 2.02415 16.15 2.02415H0.85C0.380562 2.02415 0 1.61002 0 1.09917Z" fill="white"/>
-                <path d="M2.54883 6.65032C2.54883 6.13946 2.92939 5.72534 3.39883 5.72534H13.5988C14.0683 5.72534 14.4488 6.13946 14.4488 6.65032C14.4488 7.16119 14.0683 7.5753 13.5988 7.5753H3.39883C2.92939 7.5753 2.54883 7.16119 2.54883 6.65032Z" fill="white"/>
-                <path d="M5.95156 11.2764C5.48212 11.2764 5.10156 11.6905 5.10156 12.2013C5.10156 12.7122 5.48212 13.1263 5.95156 13.1263H11.0516C11.521 13.1263 11.9016 12.7122 11.9016 12.2013C11.9016 11.6905 11.521 11.2764 11.0516 11.2764H5.95156Z" fill="white"/>
-              </svg>
+   <section x-data="{filerDrawerOpen:false,sortDrawerOpen:false}">
+    <div class="fixed bottom-4 w-full px-4 lg:hidden">
+      <div class="bg-sage text-white text-sm rounded-full max-w-sm mx-auto h-12 divide-x divide-white grid grid-cols-2">
+        <button @click="filerDrawerOpen=true" class="cursor-pointer">SORT BY</button>
+        <button @click="sortDrawerOpen=true" class="flex justify-center items-center gap-1 cursor-pointer">
+          <span>
+            FILTER
+          </span>
+          <span class="relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3" viewBox="0 0 17 14" fill="none">
+              <path
+                d="M0 1.09917C0 0.588326 0.380562 0.174194 0.85 0.174194H16.15C16.6195 0.174194 17 0.588326 17 1.09917C17 1.61002 16.6195 2.02415 16.15 2.02415H0.85C0.380562 2.02415 0 1.61002 0 1.09917Z"
+                fill="white" />
+              <path
+                d="M2.54883 6.65032C2.54883 6.13946 2.92939 5.72534 3.39883 5.72534H13.5988C14.0683 5.72534 14.4488 6.13946 14.4488 6.65032C14.4488 7.16119 14.0683 7.5753 13.5988 7.5753H3.39883C2.92939 7.5753 2.54883 7.16119 2.54883 6.65032Z"
+                fill="white" />
+              <path
+                d="M5.95156 11.2764C5.48212 11.2764 5.10156 11.6905 5.10156 12.2013C5.10156 12.7122 5.48212 13.1263 5.95156 13.1263H11.0516C11.521 13.1263 11.9016 12.7122 11.9016 12.2013C11.9016 11.6905 11.521 11.2764 11.0516 11.2764H5.95156Z"
+                fill="white" />
+            </svg>
 
-              <span class="absolute -right-5 -top-3 bg-terra-cota text-white min-w-5 min-h-5 flex items-center justify-center text-xs rounded-full">0</span>
-            </span>
-          </button>
+            <span
+              class="absolute -right-5 -top-3 bg-terra-cota text-white min-w-5 min-h-5 flex items-center justify-center text-xs rounded-full">0</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <!-- Filter Drawer -->
+      <div x-cloak x-show="filerDrawerOpen" @click.away="filerDrawerOpen = false" x-transition:enter="transition transform duration-300"
+        x-transition:enter-start="-translate-x-full" x-transition:enter-end="-translate-x-0"
+        x-transition:leave="transition transform duration-300" x-transition:leave-start="-translate-x-0"
+        x-transition:leave-end="-translate-x-full"
+        class="fixed top-0 left-0 h-full w-full max-w-md bg-white shadow-lg z-50 p-6 overflow-y-auto">
+        <!-- Close Button -->
+        <button @click="filerDrawerOpen = false"
+          class="mb-4 flex justify-end w-full cursor-pointer text-deep-forest hover:text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        
+        <div>
+          filter
         </div>
-    </section>
+
+
+      </div>
+
+      <div x-cloak x-show="sortDrawerOpen" @click.away="sortDrawerOpen = false"  x-transition:enter="transition transform duration-300"
+      x-transition:enter-start="-translate-x-full" x-transition:enter-end="-translate-x-0"
+      x-transition:leave="transition transform duration-300" x-transition:leave-start="-translate-x-0"
+      x-transition:leave-end="-translate-x-full"
+      class="fixed top-0 left-0 h-full  w-full max-w-md bg-white shadow-lg z-50 p-6 overflow-y-auto">
+      <!-- Sort Button -->
+        <button @click="sortDrawerOpen = false"
+          class="mb-4 flex justify-end w-full cursor-pointer text-deep-forest hover:text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        
+        <div>
+          sort
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+
+   <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-15">
+    <div class="bg-sage">
+      <div class="py-3 md:py-4 text-white text-sm lg:text-base">
+        <div class="marquee-container">
+          <div class="!pr-10">FOLLOW US @ZILARASILVER</div>
+          <div class="!pr-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="19"
+              viewBox="0 0 49 19" fill="none">
+              <mask id="path-1-inside-1_3050_165" fill="white">
+                <path
+                  d="M14.6594 8.65231L18.3028 9.16041L14.6594 9.64931C13.3972 9.78635 12.2227 10.3587 11.339 11.2673C10.433 12.1724 9.84925 13.3482 9.67705 14.6151L9.1865 18.3028L8.67671 14.6151C8.54529 13.3178 7.97886 12.2259 7.03517 11.3046C6.11576 10.4094 4.934 9.82956 3.66146 9.64931L0 9.16041L3.66146 8.65231C4.9357 8.50917 6.11858 7.9231 7.00231 6.99705C7.92381 6.10062 8.51529 4.92082 8.68124 3.64813L9.19104 0L9.68155 3.64813C9.85735 4.91426 10.4405 6.08938 11.3435 6.99705C12.2142 7.92938 13.3932 8.51715 14.664 8.65231" />
+              </mask>
+              <path
+                d="M18.3028 9.16041L18.3693 9.65597L18.3718 8.6652L18.3028 9.16041ZM14.6594 9.64931L14.7134 10.1465L14.7259 10.1449L14.6594 9.64931ZM11.339 11.2673L11.6924 11.6211L11.6974 11.6159L11.339 11.2673ZM9.67705 14.6151L9.1816 14.5478L9.18141 14.5492L9.67705 14.6151ZM9.1865 18.3028L8.69121 18.3712L9.68214 18.3687L9.1865 18.3028ZM8.67671 14.6151L8.17925 14.6655L8.18017 14.6746L8.18142 14.6836L8.67671 14.6151ZM7.03517 11.3046L7.38447 10.9468L7.38398 10.9463L7.03517 11.3046ZM3.66146 9.64931L3.73159 9.15424L3.72764 9.15371L3.66146 9.64931ZM0 9.16041L-0.0687257 8.66515L-0.0661759 9.65601L0 9.16041ZM3.66146 8.65231L3.60563 8.15527L3.59274 8.15706L3.66146 8.65231ZM7.00231 6.99705L6.65367 6.63865L6.64701 6.64513L6.64059 6.65185L7.00231 6.99705ZM8.68124 3.64813L8.18603 3.57893L8.18544 3.58348L8.68124 3.64813ZM9.19104 0L9.68658 -0.0666289L8.69585 -0.0691983L9.19104 0ZM9.68155 3.64813L9.18601 3.71476L9.18631 3.71689L9.68155 3.64813ZM11.3435 6.99705L11.7089 6.65579L11.7035 6.65001L11.698 6.64441L11.3435 6.99705ZM14.6111 9.14951L15.1083 9.20239L15.214 8.208L14.7169 8.15512L14.6111 9.14951ZM14.6594 8.65231L14.5904 9.14752L18.2337 9.65562L18.3028 9.16041L18.3718 8.6652L14.7285 8.1571L14.6594 8.65231ZM18.3028 9.16041L18.2363 8.66485L14.5929 9.15375L14.6594 9.64931L14.7259 10.1449L18.3693 9.65597L18.3028 9.16041ZM14.6594 9.64931L14.6055 9.15223C13.2278 9.30181 11.9455 9.9265 10.9805 10.9187L11.339 11.2673L11.6974 11.6159C12.4999 10.7908 13.5666 10.2709 14.7134 10.1464L14.6594 9.64931ZM11.339 11.2673L10.9856 10.9136C10.0023 11.8958 9.36857 13.1722 9.1816 14.5478L9.67705 14.6151L10.1725 14.6824C10.3299 13.5242 10.8636 12.4489 11.6923 11.6211L11.339 11.2673ZM9.67705 14.6151L9.18141 14.5492L8.69087 18.2368L9.1865 18.3028L9.68214 18.3687L10.1727 14.681L9.67705 14.6151ZM9.1865 18.3028L9.68179 18.2343L9.172 14.5466L8.67671 14.6151L8.18142 14.6836L8.69121 18.3712L9.1865 18.3028ZM8.67671 14.6151L9.17416 14.5647C9.02983 13.1399 8.4039 11.9421 7.38446 10.9468L7.03517 11.3046L6.68588 11.6623C7.55381 12.5097 8.06076 13.4957 8.17925 14.6655L8.67671 14.6151ZM7.03517 11.3046L7.38398 10.9463C6.38842 9.97699 5.109 9.34936 3.73159 9.15425L3.66146 9.64931L3.59134 10.1444C4.75899 10.3098 5.84311 10.8418 6.68637 11.6628L7.03517 11.3046ZM3.66146 9.64931L3.72764 9.15371L0.0661759 8.66481L0 9.16041L-0.0661759 9.65601L3.59529 10.1449L3.66146 9.64931ZM0 9.16041L0.0687257 9.65566L3.73019 9.14757L3.66146 8.65231L3.59274 8.15706L-0.0687257 8.66515L0 9.16041ZM3.66146 8.65231L3.71728 9.14919C5.1079 8.99297 6.39913 8.35334 7.36403 7.34224L7.00231 6.99705L6.64059 6.65185C5.83802 7.49286 4.76349 8.02537 3.60565 8.15544L3.66146 8.65231ZM7.00231 6.99705L7.35096 7.35544C8.35305 6.38061 8.9965 5.09737 9.17705 3.71278L8.68124 3.64813L8.18544 3.58348C8.03408 4.74427 7.49457 5.82062 6.65367 6.63865L7.00231 6.99705ZM8.68124 3.64813L9.17643 3.71733L9.68623 0.0691983L9.19104 0L8.69585 -0.0691983L8.18605 3.57893L8.68124 3.64813ZM9.19104 0L8.6955 0.0666289L9.18601 3.71476L9.68155 3.64813L10.1771 3.5815L9.68658 -0.0666289L9.19104 0ZM9.68155 3.64813L9.18631 3.71689C9.37704 5.0906 10.0097 6.36529 10.989 7.34968L11.3435 6.99705L11.698 6.64441C10.8713 5.81347 10.3377 4.73792 10.1768 3.57937L9.68155 3.64813ZM11.3435 6.99705L10.9781 7.33831C11.9309 8.35867 13.2211 9.00166 14.6111 9.14951L14.664 8.65231L14.7169 8.15512C13.5654 8.03265 12.4974 7.50009 11.7089 6.65579L11.3435 6.99705Z"
+                fill="white" mask="url(#path-1-inside-1_3050_165)" />
+              <path
+                d="M45.3583 8.65231L49 9.16041L45.3583 9.64931C44.0958 9.7861 42.921 10.3584 42.0371 11.2673C41.1319 12.1727 40.5487 13.3484 40.3765 14.6151L39.886 18.3028L39.3763 14.6151C39.2438 13.3178 38.6785 12.2259 37.7338 11.3046C36.8135 10.4083 35.6301 9.82841 34.356 9.64931L30.6973 9.16041L34.3583 8.65231C35.6324 8.50945 36.8153 7.92333 37.6987 6.99705C38.6204 6.10073 39.2122 4.92094 39.3785 3.64813L39.8883 0L40.3788 3.64813C40.5546 4.914 41.1372 6.08898 42.0393 6.99705C42.9102 7.92962 44.0896 8.51742 45.3605 8.65231"
+                fill="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
 
