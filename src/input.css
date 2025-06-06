@@ -1,5 +1,7 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
 
 @theme {
   --color-sage: #667b68;
@@ -7,6 +9,7 @@
   --color-deep-forest: #3b4443;
   --color-oat: #f0e9e1;
 }
+
 
 * {
   --swiper-scrollbar-size: 2px;
