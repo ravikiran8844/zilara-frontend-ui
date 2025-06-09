@@ -2656,7 +2656,7 @@ form.variations_form table.variations select {
   background-color: var(--color-white) !important;
   color: var(--color-deep-forest) !important;
 }
-body.product-template-default {
+body .product {
   background-color: #F4F5F4 !important;
 }
 .button.add_to_cart_button {

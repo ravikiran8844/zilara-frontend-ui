@@ -80,7 +80,7 @@ form.variations_form table.variations select {
 .quantity .ct-decrease,.quantity .ct-increase{
     @apply !bg-white !border !border-[#D9E2DA] !rounded-full !text-deep-forest !size-8 !flex !items-center !justify-center;
 } */
-body.product-template-default {
+body .product {
   @apply !bg-[#F4F5F4];
 }
 
