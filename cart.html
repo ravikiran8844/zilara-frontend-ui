@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="src/output.css" />
-  <link rel="stylesheet" href="assets/InfiniteMarquee/infinite-marquee.min.css">
+  <link rel="stylesheet" href="assets/InfiniteMarquee/infinite-marquee.min.css" />
   <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
   <script defer src="assets/alpinejs/alpine.min.js" defer></script>
 </head>
@@ -94,7 +95,7 @@
               </a>
             </div>
             <div class="lg:ms-2">
-              <a href="#" class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
+              <a href="#" class="!grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
                 <span class="relative">
                   <svg class="!fill-none hover:!fill-none h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
                     fill="none">
@@ -109,22 +110,20 @@
                       </clippath>
                     </defs>
                   </svg>
-                  <span
+                  <!-- <span
                     class="absolute -top-3 -right-3 px-1 !text-xs text-white bg-terra-cota min-w-5 min-h-5 flex justify-center items-center rounded-full">
                     1
-                  </span>
+                  </span> -->
                 </span>
 
                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                   WHISLIST
                 </span>
-
-
               </a>
             </div>
 
             <div class="ms-2">
-              <a href="cart.html" class=" !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
+              <a href="cart.html" class="!grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
                 <span class="relative">
                   <svg xmlns="http://www.w3.org/2000/svg" class="!fill-none hover:!fill-none h-5" viewBox="0 0 24 25"
                     fill="none">
@@ -144,11 +143,8 @@
                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                   CART
                 </span>
-
-
               </a>
             </div>
-
 
             <div class="ms-2">
               <a href="#" class="relative !grid lg:gap-1 place-items-center grid-rows-[26px_auto]">
@@ -589,8 +585,181 @@
   </header>
 
   <main class="cart">
+    <section class="grid lg:grid-cols-[60%_40%]">
+      <div class="bg-white px-4 sm:px-8 md:px-10 lg:px-12 xl:px-15 py-6">
+        <div>
+          <a href="shop.html" class="flex items-center gap-1 text-deep-forest text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3" viewBox="0 0 14 14" fill="none">
+              <path
+                d="M6.86296 0.499969L-2.95053e-07 7.24997C1.7214 8.93828 5.14152 12.3117 6.86292 14L7.72912 13.162C6.18058 11.6437 4.13237 9.62042 2.32529 7.84583L13.5 7.84586L13.5 6.65411L2.32527 6.65411L7.72908 1.34723L6.86296 0.499969Z"
+                fill="black" />
+            </svg>
+            <span> Back </span>
+          </a>
+        </div>
+        <div class="py-6 lg:p-10">
+          <div class="text-2xl font-semibold text-deep-forest">
+            Shopping Cart
+          </div>
+          <hr class="my-5 text-[#D9E2DA]" />
+
+          <div class="space-y-6 divide-[#D9E2DA] divide-y">
+            <div class="grid grid-cols-[40%_60%] sm:grid-cols-[25%_auto] gap-6 pb-5">
+              <div>
+                <img class="aspect-square" width="200" height="200" src="uploads/2025/05/new-arrivals-2.webp" alt="" />
+              </div>
+              <div class="grid grid-rows-[1fr_auto] gap-4">
+                <div class="space-y-1">
+                  <div class="text-md font-semibold text-deep-forest">Julia Silver Ring</div>
+                  <div class="font-semibold text-terra-cota text-md">₹ 45,445.00</div>
+                  <div class="text-sm text-[#838383]">ZIL03259</div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                      <div class="text-md font-medium">
+                        Size:
+                      </div>
+                      <select name="size">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                      </select>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-md font-medium">
+                        Quantity:
+                      </div>
+                      <select name="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <button class="flex gap-1 items-center text-[#838383] text-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 17 20" fill="none">
+                        <path
+                          d="M7.19117 15.9V6C7.19117 5.58575 6.8445 5.25 6.41678 5.25C5.98907 5.25 5.6424 5.58575 5.6424 6V15.9C5.6424 16.3142 5.98907 16.65 6.41678 16.65C6.8445 16.65 7.19117 16.314 7.19117 15.9ZM11.0902 15.9V6C11.0902 5.58575 10.7435 5.25 10.3158 5.25C9.88808 5.25 9.54141 5.58575 9.54141 6V15.9C9.54141 16.3142 9.88808 16.65 10.3158 16.65C10.7435 16.65 11.0902 16.314 11.0902 15.9ZM14.1606 5.25C13.7329 5.25 13.3862 5.58575 13.3862 6V17.75C13.3862 18.0585 12.9301 18.5 12.6118 18.5H3.88946C3.62824 18.5 3.31926 18.0935 3.31926 17.75V6C3.31926 5.58575 2.97259 5.25 2.54488 5.25C2.11716 5.25 1.77049 5.58575 1.77049 6V17.75C1.77049 18.8143 2.64064 20 3.88946 20H12.6118C13.7843 20 14.935 18.8855 14.935 17.75V6C14.935 5.58575 14.5883 5.25 14.1606 5.25ZM16.2256 3H12.0956V0.75C12.0956 0.33575 11.7489 0 11.3212 0H5.12615C4.69843 0 4.35177 0.33575 4.35177 0.75V3H0.774382C0.346665 3 0 3.33575 0 3.75C0 4.16425 0.346665 4.5 0.774382 4.5H16.2256C16.6533 4.5 17 4.16425 17 3.75C17 3.33575 16.6533 3 16.2256 3ZM10.5468 3H5.90053V1.5H10.5468V3Z"
+                          fill="#838383" />
+                      </svg>
+                      <span>Delete</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[40%_60%] sm:grid-cols-[25%_auto] gap-6 pb-5">
+              <div>
+                <img class="aspect-square" width="200" height="200" src="uploads/2025/05/new-arrivals-1.webp" alt="" />
+              </div>
+              <div class="grid grid-rows-[1fr_auto] gap-4">
+                <div class="space-y-1">
+                  <div class="text-md font-semibold text-deep-forest">Julia Silver Ring</div>
+                  <div class="font-semibold text-terra-cota text-md">₹ 45,445.00</div>
+                  <div class="text-sm text-[#838383]">ZIL03259</div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                      <div class="text-md font-medium">
+                        Size:
+                      </div>
+                      <select name="size">
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                      </select>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-md font-medium">
+                        Quantity:
+                      </div>
+                      <select name="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <button class="flex gap-1 items-center text-[#838383] text-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 17 20" fill="none">
+                        <path
+                          d="M7.19117 15.9V6C7.19117 5.58575 6.8445 5.25 6.41678 5.25C5.98907 5.25 5.6424 5.58575 5.6424 6V15.9C5.6424 16.3142 5.98907 16.65 6.41678 16.65C6.8445 16.65 7.19117 16.314 7.19117 15.9ZM11.0902 15.9V6C11.0902 5.58575 10.7435 5.25 10.3158 5.25C9.88808 5.25 9.54141 5.58575 9.54141 6V15.9C9.54141 16.3142 9.88808 16.65 10.3158 16.65C10.7435 16.65 11.0902 16.314 11.0902 15.9ZM14.1606 5.25C13.7329 5.25 13.3862 5.58575 13.3862 6V17.75C13.3862 18.0585 12.9301 18.5 12.6118 18.5H3.88946C3.62824 18.5 3.31926 18.0935 3.31926 17.75V6C3.31926 5.58575 2.97259 5.25 2.54488 5.25C2.11716 5.25 1.77049 5.58575 1.77049 6V17.75C1.77049 18.8143 2.64064 20 3.88946 20H12.6118C13.7843 20 14.935 18.8855 14.935 17.75V6C14.935 5.58575 14.5883 5.25 14.1606 5.25ZM16.2256 3H12.0956V0.75C12.0956 0.33575 11.7489 0 11.3212 0H5.12615C4.69843 0 4.35177 0.33575 4.35177 0.75V3H0.774382C0.346665 3 0 3.33575 0 3.75C0 4.16425 0.346665 4.5 0.774382 4.5H16.2256C16.6533 4.5 17 4.16425 17 3.75C17 3.33575 16.6533 3 16.2256 3ZM10.5468 3H5.90053V1.5H10.5468V3Z"
+                          fill="#838383" />
+                      </svg>
+                      <span>Delete</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
 
+
+
+        </div>
+      </div>
+
+      <div class=" px-4 sm:px-8 md:p-10 lg:p-12 xl:p-15 py-6 max-w-lg">
+        <div class="grid grid-cols-2 gap-2 text-md md:text-base text-deep-forest font-medium">
+          <div class="space-y-2">
+            <div>Subtotal</div>
+            <div>Coupon Discount</div>
+            <div>Shipping (Standard)</div>
+          </div>
+          <div class="space-y-2">
+            <div>₹ 45,445.00</div>
+            <div>
+              <button class="text-terra-cota cursor-pointer">Apply Coupon</button>
+            </div>
+            <div>Free</div>
+          </div>
+
+        </div>
+        <hr class="my-5 text-[#D9E2DA]" />
+        <div class="grid grid-cols-2 gap-2 text-md md:text-base text-deep-forest font-medium">
+          <div class="space-y-2">
+            <div>Total Cost</div>
+          </div>
+          <div class="space-y-2">
+            <div class="font-semibold text-lg">₹ 45,445.00</div>
+
+          </div>
+
+        </div>
+
+        <div class="mt-4">
+          <button class="px-4 cursor-pointer py-3 rounded-sm bg-terra-cota text-white uppercase w-full">proceed with your order</button>
+        </div>
+
+
+        <div class="mt-5">
+          <div class="text-sm font-medium mb-1">Coupon Code</div>
+          <div>
+            <form >
+              <div class="grid grid-cols-[1fr_auto] gap-1">
+                <input type="text" name="discount" class="px-4 h-10 flex items-center rounded-sm border border-dashed border-[#8F9D90]">
+              <button class="bg-sage text-white px-4 h-10 flex items-center cursor-pointer uppercase rounded-sm">Apply</button>
+              </div>
+              <div class="text-xs text-[#838383] mt-1">*Coupon codes cannot be combined.</div>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
   </main>
 
   <footer class="bg-[#F4F5F4]">
@@ -790,12 +959,10 @@
 
               <div class="flex gap-4">
                 <div>
-                  <a href="#" class="!underline !underline-offset-2 !text-deep-forest">Privacy
-                    Policy</a>
+                  <a href="#" class="!underline !underline-offset-2 !text-deep-forest">Privacy Policy</a>
                 </div>
                 <div>
-                  <a href="#" class="!underline !underline-offset-2 !text-deep-forest">Terms
-                    &amp; Conditions</a>
+                  <a href="#" class="!underline !underline-offset-2 !text-deep-forest">Terms &amp; Conditions</a>
                 </div>
               </div>
             </div>
@@ -835,7 +1002,6 @@
       },
     });
   </script>
-
 </body>
 
 </html>
